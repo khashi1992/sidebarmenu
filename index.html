@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/fontello.css">
+  
+    <title>Header Section w/Video Background</title>
+</head>
+<body>
+    <main class="w-full overflow-x-hidden font-primary h-[100vh] relative z-999 ">
+       <section class="after:bg-[#2d2d2dd9] after:absolute after:left-0 after:top-0 after:flex  after:w-full after:h-full after:z-[-1]">
+        <header class="w-full h-10 py-4 ">
+            <nav class="flex flex-wrap w-full h-full justify-evenly items-center">
+                    <div class=" flex justify-center items-center">
+                        <span class="font-bold text-white text-3xl capitalize">logo</span>
+                    </div>
+                    <div class="">
+                        <ul class="hidden md:flex justify-center items-center ">
+                            <li class="px-5 py-2 mt-5"><a href="#" class="relative border-none capitalize text-white text-xl cursor-pointer">contact</a></li>
+                            <li class="px-5 py-2 mt-5"><a href="#" class="relative border-none capitalize text-white text-xl cursor-pointer">galley</a></li>
+                            <li class="px-5 py-2 mt-5"><a href="#" class="relative border-none capitalize text-white text-xl cursor-pointer">about</a></li>
+                            <li class="px-5 py-2 mt-5"><a href="#" class="relative border-none capitalize text-white text-xl cursor-pointer">home</a></li>
+                            <li class="px-5 py-2 mt-5 "><button class="capitalize text-white text-xl cursor-pointer p-2 outline-2 outline outline-white rounded" type="button">sign in</button></li>
+                            <li class="px-5 py-2 mt-5 "><button class="capitalize text-white text-xl cursor-pointer p-2 outline-2 outline outline-white rounded" type="button">sign up</button></li>
+                        </ul>
+                    </div>
+                    <div class="rotate-[90deg] md:hidden">
+                        <span class="text-white text-3xl font-sans font-bold cursor-pointer " id="ham">|||</span>
+                    </div>
+
+            </nav>
+           
+    </header>
+    <section class=" w-full px-5 ">
+        <div class="sm:w-full justify-center md:justify-start text-center md:text-left flex flex-wrap h-[320px] md:w-[500px] absolute md:left-[20%] top-[30%]">
+            <span class="font-bold text-white text-3xl capitalize">Curvy Road in Snow Covered Forest</span>
+        <p class="text-white capitalize sm:text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum obcaecati, fuga amet esse quisquam dicta suscipit quasi officia dolorum voluptas. Iste ab beatae quas modi!
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet vitae perspiciatis blanditiis perferendis tenetur aut tempora eaque, officiis hic nostrum?</p>
+        <button class="text-white capitalize bg-black cursor-pointer w-[100px] h-[40px] rounded">See More</button>
+        </div>
+</section>
+    <div class=" absolute left-0 top-0 z-[-1] w-full h-[100vh] hover:after:content-none hover:after:border-b-2 group-hover:*: hover:after:border-b-white hover:after:duration-300 hover:after:animate-spin ">
+        <video class="w-full h-full object-cover " src="asset/video/1080p.mp4" autoplay loop muted ></video>
+    </div>
+       </section>
+       <div id="div" class="bg-white h-full absolute left-0 top-0 translate-x-[-200px] w-[40%] md:hidden">
+        <ul class="flex flex-col justify-center items-center">
+            <li class="px-5 py-4 mt-5"><a href="#" class="capitalize relative text-black  text-xl cursor-pointer   side">contact</a></li>
+            <li class="px-5 py-4 mt-5"><a href="#" class="capitalize relative text-black  text-xl cursor-pointer   side">galley</a></li>
+            <li class="px-5 py-4 mt-5"><a href="#" class="capitalize relative text-black  text-xl cursor-pointer   side">about</a></li>
+            <li class="px-5 py-4 mt-5"><a href="#" class="capitalize relative text-black  text-xl cursor-pointer   side">home</a></li>
+            <li class="px-5 py-4 mt-5 "><button class="capitalize   text-black text-xl cursor-pointer p-2 outline-2 outline outline-black rounded" type="button">sign in</button></li>
+            <li class="px-5 py-4 mt-5 "><button class="capitalize   text-black text-xl cursor-pointer p-2 outline-2 outline outline-black rounded" type="button">sign up</button></li>
+        </ul>
+    </div>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>

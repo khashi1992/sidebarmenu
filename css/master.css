@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: sans;
+    src: url(../asset/font/EduAUVICWANTHand-Medium.ttf);
+}
+a{
+   
+    &::after{
+        content: '';
+        position: absolute;
+        background-color: white;
+        bottom: -5px;
+        left: 0;
+        width: 0;
+        height: 3px; 
+        transition: 0.3s ease all;
+
+    }
+    &:hover::after{
+        width: 100%;
+    }
+}
+.side{
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 3px;
+        background-color: black;
+        transition: 0.3s ease all;
+    }
+    &:hover::after{
+        width: 100%;
+    }
+}
